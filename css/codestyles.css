@@ -1,0 +1,48 @@
+body {
+  /* font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; */
+}
+.code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  white-space: pre;
+  margin: 1ex;
+  border: 1px double dimgray;
+  background-color: ghostwhite;
+  width: 93ex;
+}
+
+pre {
+  margin: 0px !important;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 30em;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover {
+    border-bottom: 1px dotted black;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
