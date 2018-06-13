@@ -26,8 +26,8 @@
 |
 | This process of narrowing an interval of possibility by testing values one
 |  at a time against an inverse function is a type of "iterative method",
-|  sometimes called "guess and check", and is something that can be done
-|  easily using a program.
+|  sometimes informally referred to as "guess and check", and is something
+|  that can be done easily using a program.
 \----------------------------------------------------------------------------*/
 
 // First, identify the function you want to approximate, and how to evaluate
@@ -39,8 +39,8 @@ function square(x) {
 }
 
 // Now, write functions to choose a lower-bound and upper-bound.
-// All square-roots are greater than or equal to 0, so you can confidently
-//  say that 0 is smaller than the square root of any number (except 0).
+// All real square-roots are greater than or equal to 0, so you can be
+//  certain that 0 is smaller than the square root of any number (except 0).
 function square_root_lower_bound(x) {
     return 0;
 }
@@ -113,7 +113,7 @@ function approximate_square_root(x) {
 
 // Each time you run the function, the interval of possibility will get smaller
 //  until you find the exact square root. Note that most square-roots are
-//  irrational, so you may never get an exact decimal value.
+//  irrational, so you may never get an exact decimal (or binary) value.
 
 // TRY IT!
 // Write a function to approximate the cube root of x.
