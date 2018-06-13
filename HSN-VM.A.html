@@ -142,7 +142,7 @@ direction_property.get = function() {
 // Give the property a mutator (setter) function that changes x and y
 //  to match the new direction.
 direction_property.set = function(angle) {
-    // Since we assume all zero vetcors' directions are 0°, no change
+    // Since we assume all zero vectors' directions are 0°, no change
     //  can be made when changing the angle of a zero vector.
     if(this.magnitude === 0) {
         return;
