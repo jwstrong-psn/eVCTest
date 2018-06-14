@@ -107,11 +107,12 @@ console.log(counter+" tests complete: "+successes+" tests passed; "+failures+" t
 
 // Computers are a lot better at dealing with binary numbers than decimal
 //  numbers. Prove it by adding "binary thousandths", where a binary thousandth
-//  is 1/2^10, or 1/1024. We can probably safely calculate the test values by
+//  is 1/2^10, or 1/1024.
+
+// We can probably safely calculate the test values by
 //  division without spelling it out, but just to be safe, let's spell out the
 //  decimal value in ten-billionths (9,765,625/10,000,000,000 to be exact) and
 //  use the safer integer arithmetic to get the exact value.
-
 function binary_thousandths(x) {
   // Multiply x by 9,765,625, and fill out enough zeroes to make a 10-digit
   //  ten-billionths value.
